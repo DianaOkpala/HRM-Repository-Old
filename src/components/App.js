@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../logo.png';
+import Sidebar from '../components/SideBar';
 import './App.css';
 
 class App extends Component {
@@ -11,11 +12,12 @@ class App extends Component {
             className="navbar-brand col-sm-3 col-md-2 mr-0"
             href="http://www.dappuniversity.com/bootcamp"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            Dapp University
+            rel="noopener noreferrer">
+            HRM Prototype
           </a>
         </nav>
+        
+        <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
         <div className="container-fluid mt-5">
           <div className="row">
             <main role="main" className="col-lg-12 d-flex text-center">
@@ -27,7 +29,7 @@ class App extends Component {
                 >
                   <img src={logo} className="App-logo" alt="logo" />
                 </a>
-                <h1>Dapp University Starter Kit</h1>
+                <h1>HRM Prototype Home</h1>
                 <p>
                   Edit <code>src/components/App.js</code> and save to reload.
                 </p>
@@ -49,3 +51,6 @@ class App extends Component {
 }
 
 export default App;
+
+
+
